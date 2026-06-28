@@ -1,8 +1,7 @@
 name: hello world
-on: 
-  push:
-    branches:
-      - main
+on: push 
+  
+    
       
       
 jobs:
@@ -10,5 +9,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: build an App
-        run: echo "hello, ${{ vars.MY_NAME}}"
+        run: echo "hello, ${{ secrets.PGW_PASSWORD}}"
   
