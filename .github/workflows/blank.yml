@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 name: Env_Var
 on: push 
 env:
@@ -11,3 +12,16 @@ jobs:
       - name: creating envirement-varb
         run: echo "app is connecting to $ENV_VARB"
   
+=======
+name: hello world
+on: push       
+jobs:
+  actions-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+      - name: print index.html
+        run: cat index.html
+  
+>>>>>>> c62b708c63ea9c39a7af3d2f433a8b1f3ad32f9d
