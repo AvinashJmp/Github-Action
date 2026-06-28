@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
     inputs:
       environment:
-        desprition: 'choose the option to deploy'
+        description: choose the environment option
         required: true
         default: 'dev'
         options:
@@ -15,5 +15,5 @@ on:
     input-demo:
       runs-on: ubuntu-latest
       steps:
-        -name: "Deploy the app"
-          run: echo :Deploying the app to ${{inputs.environment}}
+        - name: Deploying an APP
+          run: echo "Deploying the app to ${{inputs.environment}}"
