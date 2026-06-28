@@ -1,13 +1,13 @@
-name: hello world
+name: Env_Var
 on: push 
-  
+env:
+  ENV_VARB: dev
     
       
-      
 jobs:
-  build:
+  EnvirmntVARB:
     runs-on: ubuntu-latest
     steps:
-      - name: build an App
-        run: echo "hello, ${{ secrets.PGW_PASSWORD}}"
+      - name: creating envirement-varb
+        run: echo "app is connecting to $ENV_VARB"
   
