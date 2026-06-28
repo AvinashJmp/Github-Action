@@ -6,6 +6,7 @@ on:
         description: choose the environment option
         required: true
         default: 'dev'
+        typs: choice
         options:
           - dev
           - test
