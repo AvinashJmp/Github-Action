@@ -1,13 +1,11 @@
 name: hello world
-on: push 
-  
-    
-      
-      
+on: push       
 jobs:
-  build:
+  actions-test:
     runs-on: ubuntu-latest
     steps:
-      - name: build an App
-        run: echo "hello, ${{ secrets.PGW_PASSWORD}}"
+      - name: Checkout Code
+        uses: actions/checkout@v4
+      - name: print index.html
+        run: cat index.html
   
