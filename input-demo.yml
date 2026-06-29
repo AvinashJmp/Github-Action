@@ -1,7 +1,7 @@
 name: Input_Demo
 on:
   workflow_dispatch:
-    inputs:
+    input:
       environment:
         description: choose the environment option
         required: true
